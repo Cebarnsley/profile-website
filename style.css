@@ -1,0 +1,80 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  background-color: darkslategrey;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+}
+.nav-bar .contact-link {
+  padding: 5px 5px;
+  margin: 10px 10px 10px auto;
+  width: 90px;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto Mono", monospace;
+  border-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px 2px;
+}
+.nav-bar .contact-link:hover {
+  background-color: white;
+  color: darkslategray;
+}
+
+.main-info {
+  background-color: #2b2c2c;
+  height: 600px;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  padding-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-info .title-info {
+  padding-left: 5vw;
+}
+
+.bg-info {
+  background-image: url(scrub.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  margin: 0;
+  background-position: center;
+  background-attachment: fixed;
+}
+.bg-info .text {
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  padding: 5% 20%;
+  font-family: "Roboto Mono", monospace;
+}
+.bg-info .text h2 {
+  margin: 0;
+}
+
+.projects-info {
+  background-color: #2b2c2c;
+  height: 600px;
+}
+.projects-info .project-list {
+  margin: 0;
+  width: 80%;
+  padding: 5% 20%;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */

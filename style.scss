@@ -1,0 +1,107 @@
+$font-roboto: 'Roboto Mono', monospace;
+
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+// navigation bar
+
+
+.nav-bar {
+    background-color: darkslategrey;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+
+    // contact button
+
+    .contact-link{
+        padding: 5px 5px;
+        margin: 10px 10px 10px auto;
+        width: 90px;
+        color: white;
+        font-size: 20px;
+        font-family: $font-roboto;
+        border-color: white;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px 2px;
+       
+    }
+
+    // contact button - when hovered over
+
+    .contact-link:hover {
+        background-color: white;
+        color: darkslategray;
+    }
+  }
+
+//   Variable main information
+  
+
+.main-info {
+    background-color: rgb(43, 44, 44);
+    height: 600px;
+    color: white;
+    font-family: $font-roboto;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    
+
+    // indented variable content
+    
+    .title-info {
+        padding-left: 5vw;
+    }
+}
+
+.bg-info {
+    background-image: url(scrub.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin: 0;
+    background-position: center;
+    background-attachment: fixed;
+
+    .text {
+        margin: 0;
+        color: white;
+        text-shadow: 2px 2px 3px black;
+        padding: 5% 20%;
+        font-family: $font-roboto;
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+}
+
+// projects
+
+.projects-info {
+    background-color: rgb(43, 44, 44);
+    height: 600px;
+    
+
+    .project-list {
+        margin: 0;
+        width: 80%;
+        padding: 5% 20%;
+        list-style-type: none;
+        
+    }
+}
