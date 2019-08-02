@@ -1,4 +1,6 @@
 $font-roboto: 'Roboto Mono', monospace;
+$font-raleway: 'Raleway', sans-serif;
+$font-poiret-one: 'Poiret One', cursive;
 
 
 body, html {
@@ -6,102 +8,748 @@ body, html {
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: rgb(85, 148, 163);
+    text-align: center;
+  
+   
+    
 }
 
-// navigation bar
+// hero image and menu
+
+.hero {
+    background-image: url(./images/cb_lightOff_xl.jpg);
+    width: auto;
+    height: 350px;
+   
+}
 
 
-.nav-bar {
-    background-color: darkslategrey;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
+
+.menu-list {
+    display: inline-block;
+    color: white;
+    list-style-type: none;
     width: 100%;
-    margin: 0;
+    padding: 0;
 
-    // contact button
-
-    .contact-link{
-        padding: 5px 5px;
-        margin: 10px 10px 10px auto;
-        width: 90px;
+    .menu-item {
+        display: inline-block;
+        padding: 0% 5%;
+        font-size: 35px;
         color: white;
-        font-size: 20px;
-        font-family: $font-roboto;
-        border-color: white;
-        border-radius: 5px;
-        border-style: solid;
-        border-width: 2px 2px;
+        text-decoration: none;
+        font-family: $font-poiret-one;
+    }
+
+    .active {
+        color: black; 
+    }
+
+}
+
+
+
+
+
+
+// home page
+
+.about {
+
+    
+.about-container{
+
+    .profile-pic {
+        border-radius: 50%;
+        width: 160px;
+        height: auto;
+        float: left;
+        border: 3px solid white;
+        margin: 50px 50px;
+        
+    }
+
+    width: 100%;
+    height: 60%;
+    margin-top: 30px;
+    background-color: rgb(66, 116, 129);
+    padding-top: 20px ;
+    border-color: white;
+    border-top-style: solid;
+    border-width: 3px;
+    // border-radius: 15px;
+    .about-info {
+        
+        
+            p {
+            color: black;
+            font-size: 30px;
+            font-family: $font-poiret-one;
+            text-align: center;
+            
+        
+            }
+
+            .main-webdev {
+                font-size: 40px;
+                color: white;
+            }
+        
+            hr {
+                border: none;
+                background-color: white;
+                color: white;
+                height: 2px;
+                width: 60%;
+            }
+        
+            .blurb {
+                text-align: center;
+                width: 60%;
+                padding-left: 20%;
+                color: white;
+                font-size: 25px;
+            }
+        }
+
+}
+
+    
+}
+
+
+
+
+
+// projects page
+
+.projects-info {
+    background-color: rgb(66, 116, 129);
+    margin-top: 30px;
+    padding: 30px 0px 30px 0px;
+    border-color: white;
+    border-top-style: solid;
+    border-width: 3px;
+    height: 50%;
+   
+
+    .projects {
+        width: 80%;
+        padding-left: 10%;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a{
+            text-decoration: none;
+
+
+        .card {
+            background-color: white;
+            height: 300px;
+            width: 200px;
+            margin: 20px 20px;
+            display: block;
+            border-radius: 5px;
+            padding: 5px 5px;
+            transition: all 0.3s ease-in-out;
+
+
+            .card-img {
+                height: auto;
+                width: 200px;
+                
+            }
+
+            h2 {
+                font-family: $font-poiret-one;
+                text-align: center;
+                padding: 10px 10px;
+                margin: 0;
+                color: black;
+                text-decoration: none;
+            }
+
+            p {
+                font-family: $font-raleway;
+                text-align: justify;
+                padding: 10px 20px;
+                margin: 0;
+                color: dimgray;
+                font-size: 15px;
+                text-decoration: none;
+
+            }
+
+        }
+        
+       .card:hover {
+           transform: scale(1.02);
+           box-shadow: -2px 2px 5px darkslategrey;
+       }
+           
+        }
+
        
     }
-
-    // contact button - when hovered over
-
-    .contact-link:hover {
-        background-color: white;
-        color: darkslategray;
-    }
-  }
-
-//   Variable main information
-  
-
-.main-info {
-    background-color: rgb(43, 44, 44);
-    height: 600px;
-    color: white;
-    font-family: $font-roboto;
-    padding-left: 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
- 
-    
-
-    // indented variable content
-    
-    .title-info {
-        padding-left: 5vw;
-    }
 }
 
-.bg-info {
-    background-image: url(scrub.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 600px;
-    margin: 0;
-    background-position: center;
-    background-attachment: fixed;
 
-    .text {
-        margin: 0;
-        color: white;
-        text-shadow: 2px 2px 3px black;
-        padding: 5% 20%;
-        font-family: $font-roboto;
 
-        h2 {
-            margin: 0;
+// contact page
+
+
+.contact {
+    text-align: left;
+    color: white;
+    background-color: rgb(66, 116, 129);
+    margin-top: 30px;
+    padding: 30px 0px 50px 0px;
+    border-color: white;
+    border-top-style: solid;
+    border-width: 3px;
+    height: 50%;
+
+    .contact-container {
+        width: 60%;
+        padding-left: 20%; 
+        padding-top: 40px;
+        font-family: $font-poiret-one;
+        font-size: 35px;
+        
+
+        p {
+            margin: 50px 10px;
+            
+        }
+
+        .contact-details {
+            color: black;
+            font-size: 45px;
+        }
+
+        a { 
+            color: white;
+            text-decoration: none;
         }
     }
 
 }
 
+
+
+
+
+// xl screen
+
+
+
+@media  only screen and (max-width: 1400px) {
+
+    // title image
+    
+    .hero  {
+        background-image: url(./images/cb_lightOff_xl.jpg);
+
+    }
+
+    // projects
+    .projects-info {
+    
+        .projects {
+            width: 100%;
+            padding-left: 0%;
+        }
+    }
+
+    
+    // contact page
+
+    .contact {
+        text-align: left;
+        color: white;
+        height: 60%;
+    
+        .container {
+            width: 60%;
+            padding-left: 20%;
+            padding-top: 40px;
+            font-family: $font-poiret-one;
+            font-size: 30px;
+            
+    
+            p {
+                margin: 50px 50px;
+                
+            }
+    
+            .contact-details {
+                color: black;
+                font-size: 35px;
+            }
+    
+            a { 
+                color: white;
+                text-decoration: none;
+            }
+        }
+    
+    }
+
+}
+
+// l screen
+
+@media only screen and (max-width: 1200px) {
+
+    // title image
+    .hero  {
+        background-image: url(./images/cb_lightOff_l.jpg);
+        height: 225px;
+    }
+
+    // homepage
+
+    .about {
+
+        .about-container {
+            margin-top: 70px;
+
+            .profile-pic {
+                border-radius: 50%;
+                width: 120px;
+                height: auto;
+                
+                border: 4px solid white;
+                position: relative;
+                top: -90px;
+                
+                
+            }
+        
+            .about-info {
+                
+                position: relative;
+                top: -110px;
+                
+        
+                p {
+                    color: white;
+                    font-size: 30px;
+                    font-family: $font-poiret-one;
+                    text-align: center;
+                    
+        
+                    }
+            
+                    .main-webdev {
+                        font-size: 45px;
+                    }
+            
+                    .blurb {
+                        font-size: 25px;
+                        width: 80%;
+                        padding-left: 10%;
+                    }
+                
+                }
+        
+            }   
+
+        }
+
+        // projects
+    
+        .projects-info {
+            height: auto;
+            .projects {
+                width: 80%;
+                padding-left: 10%;
+            }
+        }
+
+// contact page
+
+    .contact {
+        text-align: left;
+        color: white;
+        height: 70%;
+    
+        .contact-container {
+            width: 60%;
+            padding-left: 20%;
+            padding-top: 40px;
+            font-family: $font-poiret-one;
+            font-size: 35px;
+            
+    
+            p {
+                margin: 50px 50px;
+                
+            }
+    
+            .contact-details {
+                color: black;
+                font-size: 45px;
+            }
+    
+            a { 
+                color: white;
+                text-decoration: none;
+            }
+        }
+    
+    }
+
+
+}
+// m screen
+
+@media only screen and (max-width: 950px) {
+
+    // title image
+    .hero  {
+        background-image: url(./images/cb_lightOff_m.jpg);
+        height: 175px;
+        
+    }
+
+    // menu
+
+    .menu {
+        .menu-item {
+            font-size: 25px;
+        }
+    }
+
+    // homepage
+
+    .about {
+
+        .about-container {
+            margin-top: 70px;
+
+            .profile-pic {
+                border-radius: 50%;
+                width: 120px;
+                height: auto;
+                
+                border: 4px solid white;
+                position: relative;
+                top: -90px;
+                
+                
+            }
+        
+            .about-info {
+                
+                position: relative;
+                top: -110px;
+                
+        
+                p {
+                    color: white;
+                    font-size: 30px;
+                    font-family: $font-poiret-one;
+                    text-align: center;
+                    
+        
+                    }
+            
+                    .main-webdev {
+                        font-size: 40px;
+                    }
+            
+                    .blurb {
+                        font-size: 25px;
+                        width: 80%;
+                        padding-left: 10%;
+                    }
+                
+                }
+        
+            }   
+
+        }
+    
 // projects
 
 .projects-info {
-    background-color: rgb(43, 44, 44);
-    height: 600px;
-    
+    height: auto;
 
-    .project-list {
-        margin: 0;
+    .projects {
         width: 80%;
-        padding: 5% 20%;
-        list-style-type: none;
-        
+        padding-left: 10%;
     }
 }
+
+
+// contace page
+
+    .contact {
+        text-align: left;
+        color: white;
+        height: 70%;
+    
+        .contact-container {
+            width: 60%;
+            padding-left: 20%;
+            padding-top: 40px;
+            font-family: $font-poiret-one;
+            font-size: 30px;
+            
+    
+            p {
+                margin: 50px 50px;
+                
+            }
+    
+            .contact-details {
+                color: black;
+                font-size: 35px;
+            }
+    
+            a { 
+                color: white;
+                text-decoration: none;
+            }
+        }
+    
+    }
+
+    
+}
+// s screen
+
+@media only screen and (max-width: 750px) {
+
+    // title image
+    .hero  {
+        background-image: url(./images/cb_lightOff_s.jpg);
+       height: 150px;
+    }
+
+    // menu
+
+    .menu {
+        .menu-item {
+            font-size: 25px;
+        }
+    }
+
+    // homepage
+
+    .about {
+
+        .about-container {
+            margin-top: 70px;
+            height:70%;
+
+            .profile-pic {
+                border-radius: 50%;
+                width: 120px;
+                height: auto;
+                
+                border: 4px solid white;
+                position: relative;
+                top: -90px;
+                
+                
+            }
+        
+            .about-info {
+                
+                position: relative;
+                top: -110px;
+                
+        
+                p {
+                    color: white;
+                    font-size: 20px;
+                    font-family: $font-poiret-one;
+                    text-align: center;
+                    
+        
+                    }
+            
+                    .main-webdev {
+                        font-size: 35px;
+                    }
+            
+                    .blurb {
+                        font-size: 20px;
+                        width: 80%;
+                        padding-left: 10%;
+                    }
+                
+                }
+        
+            }   
+
+        }
+
+    // projects 
+
+.projects-info {
+    height: auto;
+}
+    
+
+
+// contact page
+
+    .contact {
+        text-align: left;
+        color: white;
+        height: 80%;
+    
+        .contact-container {
+            width: 80%;
+            padding-left: 10%;
+            padding-top: 10px;
+            font-family: $font-poiret-one;
+            font-size: 30px;
+            
+    
+            p {
+                margin: 50px 50px;
+                
+            }
+    
+            .contact-details {
+                color: black;
+                font-size: 35px;
+            }
+    
+            a { 
+                color: white;
+                text-decoration: none;
+            }
+        }
+    
+    }
+
+}
+
+// xs screen
+
+@media only screen and (max-width: 550px) {
+
+    // title image
+    .hero  {
+        background-image: url(./images/cb_lightOff_xs.jpg);
+        height: 100px;
+        text-align: center;
+    }
+
+    // menu
+
+    .menu{
+        width: 100%;
+
+        .menu-item {
+            font-size: 20px;
+            padding: 0% 5%;
+        } 
+    }
+
+    // homepage
+
+    .about {
+
+        .about-container {
+            margin-top: 80px;
+
+
+
+            .profile-pic {
+                border-radius: 50%;
+                width: 120px;
+                height: auto;
+                
+                border: 4px solid white;
+                position: relative;
+                top: -90px;
+                
+                
+            }
+            .about-info {
+                
+                position: relative;
+                top: -110px;
+            
+                p {
+                    color: white;
+                    font-size: 20px;
+                    font-family: $font-poiret-one;
+                    text-align: center;
+                
+                    
+                    }
+            
+                .main-webdev {
+                    font-size: 35px;
+                }
+        
+                .blurb {
+                    font-size: 20px;
+                    width: 90%;
+                    padding-left: 5%;
+                }
+            }
+            
+        }
+}
+    
+    // projects 
+
+    .projects-info {
+        height: auto;
+    }
+
+    // contact page
+
+    .contact {
+    text-align: left;
+    color: white;
+    height: 70%;
+
+        .contact-container {
+            width: 90%;
+            padding-left: 5%;
+            padding-top: 0px;
+            font-family: $font-poiret-one;
+            font-size: 20px;
+            word-break: break-word;
+
+            p {
+                margin: 30px 15px;
+                
+            }
+
+            .contact-details {
+                color: black;
+                font-size: 25px;
+            }
+
+            a { 
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+}
+
+}
+
+
+
+
+

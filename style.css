@@ -3,78 +3,484 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #5594a3;
+  text-align: center;
 }
 
-.nav-bar {
-  background-color: darkslategrey;
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
+.hero {
+  background-image: url(./images/cb_lightOff_xl.jpg);
+  width: auto;
+  height: 350px;
+}
+
+.menu-list {
+  display: inline-block;
+  color: white;
+  list-style-type: none;
   width: 100%;
-  margin: 0;
+  padding: 0;
 }
-.nav-bar .contact-link {
-  padding: 5px 5px;
-  margin: 10px 10px 10px auto;
-  width: 90px;
+.menu-list .menu-item {
+  display: inline-block;
+  padding: 0% 5%;
+  font-size: 35px;
   color: white;
-  font-size: 20px;
-  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  font-family: "Poiret One", cursive;
+}
+.menu-list .active {
+  color: black;
+}
+
+.about .about-container {
+  width: 100%;
+  height: 60%;
+  margin-top: 30px;
+  background-color: #427481;
+  padding-top: 20px;
   border-color: white;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 2px 2px;
+  border-top-style: solid;
+  border-width: 3px;
 }
-.nav-bar .contact-link:hover {
+.about .about-container .profile-pic {
+  border-radius: 50%;
+  width: 160px;
+  height: auto;
+  float: left;
+  border: 3px solid white;
+  margin: 50px 50px;
+}
+.about .about-container .about-info p {
+  color: black;
+  font-size: 30px;
+  font-family: "Poiret One", cursive;
+  text-align: center;
+}
+.about .about-container .about-info .main-webdev {
+  font-size: 40px;
+  color: white;
+}
+.about .about-container .about-info hr {
+  border: none;
   background-color: white;
-  color: darkslategray;
-}
-
-.main-info {
-  background-color: #2b2c2c;
-  height: 600px;
   color: white;
-  font-family: "Roboto Mono", monospace;
-  padding-left: 10vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 2px;
+  width: 60%;
 }
-.main-info .title-info {
-  padding-left: 5vw;
-}
-
-.bg-info {
-  background-image: url(scrub.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 600px;
-  margin: 0;
-  background-position: center;
-  background-attachment: fixed;
-}
-.bg-info .text {
-  margin: 0;
+.about .about-container .about-info .blurb {
+  text-align: center;
+  width: 60%;
+  padding-left: 20%;
   color: white;
-  text-shadow: 2px 2px 3px black;
-  padding: 5% 20%;
-  font-family: "Roboto Mono", monospace;
-}
-.bg-info .text h2 {
-  margin: 0;
+  font-size: 25px;
 }
 
 .projects-info {
-  background-color: #2b2c2c;
-  height: 600px;
+  background-color: #427481;
+  margin-top: 30px;
+  padding: 30px 0px 30px 0px;
+  border-color: white;
+  border-top-style: solid;
+  border-width: 3px;
+  height: 50%;
 }
-.projects-info .project-list {
-  margin: 0;
+.projects-info .projects {
   width: 80%;
-  padding: 5% 20%;
-  list-style-type: none;
+  padding-left: 10%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects-info .projects a {
+  text-decoration: none;
+}
+.projects-info .projects a .card {
+  background-color: white;
+  height: 300px;
+  width: 200px;
+  margin: 20px 20px;
+  display: block;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: all 0.3s ease-in-out;
+}
+.projects-info .projects a .card .card-img {
+  height: auto;
+  width: 200px;
+}
+.projects-info .projects a .card h2 {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 0;
+  color: black;
+  text-decoration: none;
+}
+.projects-info .projects a .card p {
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  padding: 10px 20px;
+  margin: 0;
+  color: dimgray;
+  font-size: 15px;
+  text-decoration: none;
+}
+.projects-info .projects a .card:hover {
+  transform: scale(1.02);
+  box-shadow: -2px 2px 5px darkslategrey;
+}
+
+.contact {
+  text-align: left;
+  color: white;
+  background-color: #427481;
+  margin-top: 30px;
+  padding: 30px 0px 50px 0px;
+  border-color: white;
+  border-top-style: solid;
+  border-width: 3px;
+  height: 50%;
+}
+.contact .contact-container {
+  width: 60%;
+  padding-left: 20%;
+  padding-top: 40px;
+  font-family: "Poiret One", cursive;
+  font-size: 35px;
+}
+.contact .contact-container p {
+  margin: 50px 10px;
+}
+.contact .contact-container .contact-details {
+  color: black;
+  font-size: 45px;
+}
+.contact .contact-container a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  .hero {
+    background-image: url(./images/cb_lightOff_xl.jpg);
+  }
+
+  .projects-info .projects {
+    width: 100%;
+    padding-left: 0%;
+  }
+
+  .contact {
+    text-align: left;
+    color: white;
+    height: 60%;
+  }
+  .contact .container {
+    width: 60%;
+    padding-left: 20%;
+    padding-top: 40px;
+    font-family: "Poiret One", cursive;
+    font-size: 30px;
+  }
+  .contact .container p {
+    margin: 50px 50px;
+  }
+  .contact .container .contact-details {
+    color: black;
+    font-size: 35px;
+  }
+  .contact .container a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .hero {
+    background-image: url(./images/cb_lightOff_l.jpg);
+    height: 225px;
+  }
+
+  .about .about-container {
+    margin-top: 70px;
+  }
+  .about .about-container .profile-pic {
+    border-radius: 50%;
+    width: 120px;
+    height: auto;
+    border: 4px solid white;
+    position: relative;
+    top: -90px;
+  }
+  .about .about-container .about-info {
+    position: relative;
+    top: -110px;
+  }
+  .about .about-container .about-info p {
+    color: white;
+    font-size: 30px;
+    font-family: "Poiret One", cursive;
+    text-align: center;
+  }
+  .about .about-container .about-info .main-webdev {
+    font-size: 45px;
+  }
+  .about .about-container .about-info .blurb {
+    font-size: 25px;
+    width: 80%;
+    padding-left: 10%;
+  }
+
+  .projects-info {
+    height: auto;
+  }
+  .projects-info .projects {
+    width: 80%;
+    padding-left: 10%;
+  }
+
+  .contact {
+    text-align: left;
+    color: white;
+    height: 70%;
+  }
+  .contact .contact-container {
+    width: 60%;
+    padding-left: 20%;
+    padding-top: 40px;
+    font-family: "Poiret One", cursive;
+    font-size: 35px;
+  }
+  .contact .contact-container p {
+    margin: 50px 50px;
+  }
+  .contact .contact-container .contact-details {
+    color: black;
+    font-size: 45px;
+  }
+  .contact .contact-container a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .hero {
+    background-image: url(./images/cb_lightOff_m.jpg);
+    height: 175px;
+  }
+
+  .menu .menu-item {
+    font-size: 25px;
+  }
+
+  .about .about-container {
+    margin-top: 70px;
+  }
+  .about .about-container .profile-pic {
+    border-radius: 50%;
+    width: 120px;
+    height: auto;
+    border: 4px solid white;
+    position: relative;
+    top: -90px;
+  }
+  .about .about-container .about-info {
+    position: relative;
+    top: -110px;
+  }
+  .about .about-container .about-info p {
+    color: white;
+    font-size: 30px;
+    font-family: "Poiret One", cursive;
+    text-align: center;
+  }
+  .about .about-container .about-info .main-webdev {
+    font-size: 40px;
+  }
+  .about .about-container .about-info .blurb {
+    font-size: 25px;
+    width: 80%;
+    padding-left: 10%;
+  }
+
+  .projects-info {
+    height: auto;
+  }
+  .projects-info .projects {
+    width: 80%;
+    padding-left: 10%;
+  }
+
+  .contact {
+    text-align: left;
+    color: white;
+    height: 70%;
+  }
+  .contact .contact-container {
+    width: 60%;
+    padding-left: 20%;
+    padding-top: 40px;
+    font-family: "Poiret One", cursive;
+    font-size: 30px;
+  }
+  .contact .contact-container p {
+    margin: 50px 50px;
+  }
+  .contact .contact-container .contact-details {
+    color: black;
+    font-size: 35px;
+  }
+  .contact .contact-container a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .hero {
+    background-image: url(./images/cb_lightOff_s.jpg);
+    height: 150px;
+  }
+
+  .menu .menu-item {
+    font-size: 25px;
+  }
+
+  .about .about-container {
+    margin-top: 70px;
+    height: 70%;
+  }
+  .about .about-container .profile-pic {
+    border-radius: 50%;
+    width: 120px;
+    height: auto;
+    border: 4px solid white;
+    position: relative;
+    top: -90px;
+  }
+  .about .about-container .about-info {
+    position: relative;
+    top: -110px;
+  }
+  .about .about-container .about-info p {
+    color: white;
+    font-size: 20px;
+    font-family: "Poiret One", cursive;
+    text-align: center;
+  }
+  .about .about-container .about-info .main-webdev {
+    font-size: 35px;
+  }
+  .about .about-container .about-info .blurb {
+    font-size: 20px;
+    width: 80%;
+    padding-left: 10%;
+  }
+
+  .projects-info {
+    height: auto;
+  }
+
+  .contact {
+    text-align: left;
+    color: white;
+    height: 80%;
+  }
+  .contact .contact-container {
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 10px;
+    font-family: "Poiret One", cursive;
+    font-size: 30px;
+  }
+  .contact .contact-container p {
+    margin: 50px 50px;
+  }
+  .contact .contact-container .contact-details {
+    color: black;
+    font-size: 35px;
+  }
+  .contact .contact-container a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .hero {
+    background-image: url(./images/cb_lightOff_xs.jpg);
+    height: 100px;
+    text-align: center;
+  }
+
+  .menu {
+    width: 100%;
+  }
+  .menu .menu-item {
+    font-size: 20px;
+    padding: 0% 5%;
+  }
+
+  .about .about-container {
+    margin-top: 80px;
+  }
+  .about .about-container .profile-pic {
+    border-radius: 50%;
+    width: 120px;
+    height: auto;
+    border: 4px solid white;
+    position: relative;
+    top: -90px;
+  }
+  .about .about-container .about-info {
+    position: relative;
+    top: -110px;
+  }
+  .about .about-container .about-info p {
+    color: white;
+    font-size: 20px;
+    font-family: "Poiret One", cursive;
+    text-align: center;
+  }
+  .about .about-container .about-info .main-webdev {
+    font-size: 35px;
+  }
+  .about .about-container .about-info .blurb {
+    font-size: 20px;
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  .projects-info {
+    height: auto;
+  }
+
+  .contact {
+    text-align: left;
+    color: white;
+    height: 70%;
+  }
+  .contact .contact-container {
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 0px;
+    font-family: "Poiret One", cursive;
+    font-size: 20px;
+    word-break: break-word;
+  }
+  .contact .contact-container p {
+    margin: 30px 15px;
+  }
+  .contact .contact-container .contact-details {
+    color: black;
+    font-size: 25px;
+  }
+  .contact .contact-container a {
+    color: white;
+    text-decoration: none;
+  }
+  .contact .contact-container a:hover {
+    text-decoration: underline;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
