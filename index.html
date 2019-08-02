@@ -9,35 +9,41 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src='script.js'></script>
+    
 </head>
 <body>
 
     <!-- hero title image -->
+<div class="home">
 
+<div class="header">
 
+    <img src="./images/profile-pic.jpg" class="profile-pic" alt="profile picture">
     <img src="./images/cb_lightOff_xl.jpg" class="hero" alt="title image" >
 
-   
+</div>
 
 
     <!-- menu -->
-   
+ 
 
 <div class="menu">
     <ul class="menu-list">
-        <a href="" class="menu-item active"><li>Home</li></a>
-        <a href="./projects.html" class="menu-item"><li>Projects</li></a>
-        <a href="./contact.html" class="menu-item"><li>Contact </li></a>
+        <a class=" home menu-item"><li>About</li></a>
+        <a class=" project-section menu-item"><li>Projects</li></a>
+        <a class=" contact-section menu-item"><li>Contact </li></a>
     </ul>
 </div>
+<hr>
 
     <!-- about section -->
 
 <div class="about">
         
             <div class="about-container">
-                    <img src="./images/profile-pic.jpg" class="profile-pic" alt="profile picture">
+                    <!-- <img src="./images/profile-pic.jpg" class="profile-pic" alt="profile picture"> -->
                 <div class="about-info">
                     <p  class="main-webdev">
                         Front End Website Developer 
@@ -45,13 +51,91 @@
                     <p >
                         HTML - CSS3 - React - Bootstrap - SASS - WordPress - Node.js    
                     </p>
-                    <hr>
+                    
                     <p class="blurb">
-                            Currently working as a Nurse but have been learning programming in my spare time. I am looking to make the transition to Front End Website Developer.  
+                            I am currently working as a Nurse but I have been learning programming in my spare time. I am looking to make the transition to Front End Website Developer.  
                     </p>
                 </div>
         </div>
 </div>
+</div>
+ <!-- projects -->
+
+ <div class="projects-info">
+     <p class="section-title">Projects</p>
+    <div class="projects">
+        
+       
+        <!-- card -bg-generator  -->
+        <a href="https://cebarnsley.github.io/background-generator/">
+            <div class="card">
+                   <img src="bg-gen.png" class="card-img">
+                    <h2>Background Generator</h1>
+                    <p>Uses JavaScript to randomly genarate a two coloured linear gradient background.</p>
+            </div>
+        </a>
+
+        <!-- Robo Friends -->
+        <a href="https://cebarnsley.github.io/robo-friends/">
+            <div class="card">
+                   <img src="robofriends.png" class="card-img">
+                    <h2>Robo Friends</h1>
+                    <p>React App using an API to provide images for Robot Friends.</p>
+            </div>
+        </a>
+
+
+        <!-- face recongition app -->
+        <a href="https://face-finder-7961.herokuapp.com/">
+            <div class="card">
+                   <img src="face-recog.png" class="card-img">
+                    <h2>Face Recogntion</h1>
+                    <p>App created with React uses an API to highlight faces in photos.</p>
+            </div>
+        </a>
+
+
+        <!-- Puppers -->
+        <a href="https://cebarnsley.github.io/Puppers-Puppers-Puppers/homepage/">
+            <div class="card">
+                   <img src="puppers.png" class="card-img">
+                    <h2>Puppers Puppers Puppers</h1>
+                    <p>A responsive multipage website for a fictitious client, featuring JS day/night toggle</p>
+            </div>
+        </a>
+
+
+        <!-- card -bg-generator -->
+        <a href="https://katscakes.org">
+            <div class="card">
+                   <img src="cakes.png" class="card-img">
+                    <h2>Kat's Cakes</h1>
+                    <p>A WordPress Website for a friend.</p>
+            </div>
+        </a>
+
+       
+    </div>
+<!-- end projects -->
+   
+
+</div>  
+<!-- end projects-info -->
+
+   <!-- contact -->
+
+   <div class="contact">
+       <p class="section-title">Contact</p>
+    <div class="contact-container">
+        <p><span class="contact-details">Email: </span>cebarnsley@gmail.com</p>
+    
+        <p><span class="contact-details">Github:</span> <a href="https://github.com/Cebarnsley">https://github.com/Cebarnsley</a></p>
+       
+        <p><span class="contact-details">LinkedIn: </span><a href="https://www.linkedin.com/in/candice-barnsley-9a574b18a/">https://www.linkedin.com/in/candice-barnsley-9a574b18a/</a></p>
+        
+    </div>
+</div>
+ 
 
  
 

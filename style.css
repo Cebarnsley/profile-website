@@ -7,10 +7,27 @@ body, html {
   text-align: center;
 }
 
-.hero {
+.header {
+  float: none;
+}
+.header .profile-pic {
+  border-radius: 50%;
+  width: 160px;
+  height: auto;
+  position: relative;
+  border: 3px solid white;
+  display: block;
+  text-align: center;
+  margin: 50px auto 20px auto;
+  z-index: 2;
+}
+.header .hero {
   background-image: url(./images/cb_lightOff_xl.jpg);
   width: auto;
   height: 350px;
+  position: relative;
+  top: -150px;
+  z-index: 1;
 }
 
 .menu-list {
@@ -19,6 +36,8 @@ body, html {
   list-style-type: none;
   width: 100%;
   padding: 0;
+  position: relative;
+  top: -170px;
 }
 .menu-list .menu-item {
   display: inline-block;
@@ -27,28 +46,44 @@ body, html {
   color: white;
   text-decoration: none;
   font-family: "Poiret One", cursive;
-}
-.menu-list .active {
-  color: black;
+  cursor: pointer;
 }
 
+hr {
+  border: none;
+  background-color: white;
+  color: black;
+  height: 2px;
+  width: 60%;
+  position: relative;
+  top: -160px;
+}
+
+.section-title {
+  color: white;
+  font-family: "Poiret One", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+.home {
+  height: 100%;
+}
+
+.about {
+  position: relative;
+  top: -130px;
+}
 .about .about-container {
   width: 100%;
   height: 60%;
-  margin-top: 30px;
-  background-color: #427481;
+  margin-top: 130px;
+  background-color: #5594a3;
   padding-top: 20px;
-  border-color: white;
-  border-top-style: solid;
-  border-width: 3px;
 }
-.about .about-container .profile-pic {
-  border-radius: 50%;
-  width: 160px;
-  height: auto;
-  float: left;
-  border: 3px solid white;
-  margin: 50px 50px;
+.about .about-container .about-info {
+  position: relative;
+  top: -150px;
 }
 .about .about-container .about-info p {
   color: black;
@@ -58,12 +93,12 @@ body, html {
 }
 .about .about-container .about-info .main-webdev {
   font-size: 40px;
-  color: white;
+  color: black;
 }
 .about .about-container .about-info hr {
   border: none;
   background-color: white;
-  color: white;
+  color: black;
   height: 2px;
   width: 60%;
 }
@@ -71,18 +106,17 @@ body, html {
   text-align: center;
   width: 60%;
   padding-left: 20%;
-  color: white;
+  color: black;
   font-size: 25px;
 }
 
 .projects-info {
-  background-color: #427481;
-  margin-top: 30px;
+  background-color: #ff966f;
   padding: 30px 0px 30px 0px;
-  border-color: white;
+  height: 100%;
   border-top-style: solid;
+  border-color: white;
   border-width: 3px;
-  height: 50%;
 }
 .projects-info .projects {
   width: 80%;
@@ -136,12 +170,11 @@ body, html {
   text-align: left;
   color: white;
   background-color: #427481;
-  margin-top: 30px;
   padding: 30px 0px 50px 0px;
-  border-color: white;
+  height: 100%;
   border-top-style: solid;
+  border-color: white;
   border-width: 3px;
-  height: 50%;
 }
 .contact .contact-container {
   width: 60%;
