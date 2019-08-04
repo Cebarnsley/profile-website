@@ -17,12 +17,35 @@ body, html {
 
 // hero image and menu
 
-.hero {
-    background-image: url(./images/cb_lightOff_xl.jpg);
-    width: auto;
-    height: 350px;
-   
+.header{
+    float: none;
+
+    .profile-pic {
+        border-radius: 50%;
+        width: 160px;
+        height: auto;        
+        border: 3px solid rgb(70, 124, 138);        
+        display: block;
+        text-align: center;
+        margin: 20px auto 0px auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+       
+        
+    }
+    .hero {
+        background-image: url(./images/cb_lightOff_xl.jpg);
+        width: auto;
+        height: 350px;
+        margin-top: 60px;
+       
+        
+    }
+
 }
+
 
 
 
@@ -32,111 +55,123 @@ body, html {
     list-style-type: none;
     width: 100%;
     padding: 0;
+  
 
     .menu-item {
         display: inline-block;
         padding: 0% 5%;
-        font-size: 35px;
-        color: white;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         font-family: $font-poiret-one;
+        cursor: pointer;
     }
 
-    .active {
-        color: black; 
-    }
 
 }
 
+hr {
+    border: none;
+    background-color: rgb(70, 124, 138);
+    color: black;
+    height: 2px;
+    width: 60%;
+    
+}
+
+
+.section-title {
+    color: rgb(0, 0, 0);
+    font-family: $font-poiret-one;
+    font-size: 50px;
+    text-align: center;
+   
+}
 
 
 
 
 
 // home page
+.home{
+    min-height: 100%;
+}
+
+
 
 .about {
-
+   
     
-.about-container{
-
-    .profile-pic {
-        border-radius: 50%;
-        width: 160px;
-        height: auto;
-        float: left;
-        border: 3px solid white;
-        margin: 50px 50px;
+    .about-container{
+    
+        width: 100%;
+        min-height: 60%;
+        margin-top: 30px;
+        background-color: rgb(85, 148, 163);
+        padding-top: 20px ;
+       
+        
+    
+        // border-radius: 15px;
+        .about-info {
+            // position: relative;
+            // top: -150px;
+    
+                p {
+                color: black;
+                font-size: 30px;
+                font-family: $font-poiret-one;
+                text-align: center;
+                
+            
+                }
+    
+                .main-webdev {
+                    font-size: 40px;
+                    color: rgb(255, 255, 255);
+                    
+                }
+            
+                hr {
+                    border: none;
+                    background-color: white;
+                    color: black;
+                    height: 2px;
+                    width: 80%;
+                }
+            
+                .blurb {
+                    text-align: center;
+                    width: 60%;
+                    padding-left: 20%;
+                    color: rgb(255, 255, 255);
+                    font-size: 25px;
+                }
+            }
+    
+    }
+    
         
     }
-
-    width: 100%;
-    height: 60%;
-    margin-top: 30px;
-    background-color: rgb(66, 116, 129);
-    padding-top: 20px ;
-    border-color: white;
-    border-top-style: solid;
-    border-width: 3px;
-    // border-radius: 15px;
-    .about-info {
-        
-        
-            p {
-            color: black;
-            font-size: 30px;
-            font-family: $font-poiret-one;
-            text-align: center;
-            
-        
-            }
-
-            .main-webdev {
-                font-size: 40px;
-                color: white;
-            }
-        
-            hr {
-                border: none;
-                background-color: white;
-                color: white;
-                height: 2px;
-                width: 60%;
-            }
-        
-            .blurb {
-                text-align: center;
-                width: 60%;
-                padding-left: 20%;
-                color: white;
-                font-size: 25px;
-            }
-        }
-
-}
-
     
-}
-
-
-
-
+    
 
 // projects page
 
 .projects-info {
-    background-color: rgb(66, 116, 129);
-    margin-top: 30px;
-    padding: 30px 0px 30px 0px;
-    border-color: white;
+    // background-color: rgb(255, 150, 111);  
+    background-color: rgb(156, 190, 134);  
+    padding: 30px 0px 30px 0px;  
+    min-height: 100%;
     border-top-style: solid;
+    border-color: rgb(121, 149, 102);
     border-width: 3px;
-    height: 50%;
+    
    
 
     .projects {
-        width: 80%;
-        padding-left: 10%;
+        width: 60%;
+        padding-left: 20%;
         padding-top: 20px;
         display: flex;
         flex-direction: row;
@@ -147,50 +182,50 @@ body, html {
             text-decoration: none;
 
 
-        .card {
-            background-color: white;
-            height: 300px;
-            width: 200px;
-            margin: 20px 20px;
-            display: block;
-            border-radius: 5px;
-            padding: 5px 5px;
-            transition: all 0.3s ease-in-out;
+            .card {
+                background-color: white;
+                height: 350px;
+                width: 300px;
+                margin: 20px 20px;
+                display: block;
+                border-radius: 5px;
+                padding: 5px 5px;
+                transition: all 0.3s ease-in-out;
 
 
-            .card-img {
-                height: auto;
-                width: 200px;
-                
+                .card-img {
+                    height: auto;
+                    width: 300px;
+                    
+                }
+
+                h2 {
+                    font-family: $font-poiret-one;
+                    text-align: center;
+                    padding: 10px 10px;
+                    margin: 0;
+                    color: black;
+                    text-decoration: none;
+                }
+
+                p {
+                    font-family: $font-raleway;
+                    text-align: justify;
+                    padding: 10px 20px;
+                    margin: 0;
+                    color: dimgray;
+                    font-size: 20px;
+                    text-decoration: none;
+
+                }
+
             }
-
-            h2 {
-                font-family: $font-poiret-one;
-                text-align: center;
-                padding: 10px 10px;
-                margin: 0;
-                color: black;
-                text-decoration: none;
-            }
-
-            p {
-                font-family: $font-raleway;
-                text-align: justify;
-                padding: 10px 20px;
-                margin: 0;
-                color: dimgray;
-                font-size: 15px;
-                text-decoration: none;
-
-            }
-
-        }
         
-       .card:hover {
-           transform: scale(1.02);
-           box-shadow: -2px 2px 5px darkslategrey;
-       }
-           
+            .card:hover {
+                transform: scale(1.02);
+                box-shadow: -2px 2px 5px rgb(121, 149, 102);
+            }
+            
         }
 
        
@@ -205,42 +240,68 @@ body, html {
 .contact {
     text-align: left;
     color: white;
-    background-color: rgb(66, 116, 129);
-    margin-top: 30px;
-    padding: 30px 0px 50px 0px;
-    border-color: white;
+    // background-color: rgb(66, 116, 129);   
+    background-color: rgb(167, 129, 148);  
+    padding: 30px 0px 50px 0px;   
+    min-height: 70%;
     border-top-style: solid;
+    border-color: rgb(131, 101, 116);
     border-width: 3px;
-    height: 50%;
 
     .contact-container {
         width: 60%;
         padding-left: 20%; 
-        padding-top: 40px;
         font-family: $font-poiret-one;
         font-size: 35px;
+        text-align: center;
+        height: auto;
         
-
         p {
-            margin: 50px 10px;
+            margin-bottom: 20px;
+
             
         }
 
-        .contact-details {
+        .details {
             color: black;
-            font-size: 45px;
+            font-size: 40px;
         }
-
-        a { 
+        
+        .link { 
             color: white;
             text-decoration: none;
+            margin: 50px 10px;
+            width: auto;
+            padding: 10px 20px;
+            background-color: rgb(131, 101, 116);
+            border-radius: 50px;
+            display: inline-block;
+            
         }
+
+        .link:hover {
+       
+        color: black;
+        cursor: pointer;
+        }
+
+        
+    
     }
 
 }
 
 
-
+footer {
+    font-size: 25px;
+    background-color: cadetblue;
+    padding: 10px 0px;
+    color: white;
+    font-family: $font-poiret-one;
+    border-top-style: solid;
+    border-width: 3px;
+    border-color: rgb(83, 136, 138);
+}
 
 
 // xl screen
@@ -250,18 +311,32 @@ body, html {
 @media  only screen and (max-width: 1400px) {
 
     // title image
-    
-    .hero  {
-        background-image: url(./images/cb_lightOff_xl.jpg);
+    .header {
+        .profile-pic {
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin-top: 40px;
+        }
 
+        .hero  {
+            background-image: url(./images/cb_lightOff_xl.jpg);
+            margin-top: 100px;
+        }
     }
+
+    hr {
+        width: 80%;
+    }
+    
 
     // projects
     .projects-info {
-    
+        
         .projects {
-            width: 100%;
-            padding-left: 0%;
+            width: 60%;
+            padding-left: 20%;
         }
     }
 
@@ -271,30 +346,42 @@ body, html {
     .contact {
         text-align: left;
         color: white;
-        height: 60%;
+        min-height: 60%;
     
-        .container {
+        .contact-container {
             width: 60%;
             padding-left: 20%;
-            padding-top: 40px;
+            
             font-family: $font-poiret-one;
-            font-size: 30px;
+            font-size: 35px;
             
     
+           
             p {
-                margin: 50px 50px;
+                margin-bottom: 5px;
+    
+               
+            }
+
+            .details {
+                color: black;
+                font-size: 40px;
+                
+            }
+            
+            a { 
+                color: white;
+                // text-decoration: none;
+                margin: 10px 0px;
+                display: inline-block;
+                width: auto;
+                padding: 10px 10px;
+                background-color: rgb(131, 101, 116);
+                border-radius: 50px;
                 
             }
     
-            .contact-details {
-                color: black;
-                font-size: 35px;
-            }
-    
-            a { 
-                color: white;
-                text-decoration: none;
-            }
+        
         }
     
     }
@@ -306,10 +393,23 @@ body, html {
 @media only screen and (max-width: 1200px) {
 
     // title image
-    .hero  {
-        background-image: url(./images/cb_lightOff_l.jpg);
-        height: 225px;
+
+    .header {
+        .profile-pic{
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .hero  {
+            background-image: url(./images/cb_lightOff_l.jpg);
+            height: 225px;
+            margin-top: 120px;
+        }
     }
+    
 
     // homepage
 
@@ -332,8 +432,8 @@ body, html {
         
             .about-info {
                 
-                position: relative;
-                top: -110px;
+                // position: relative;
+                // top: -110px;
                 
         
                 p {
@@ -364,6 +464,7 @@ body, html {
         // projects
     
         .projects-info {
+            width: 100%;
             height: auto;
             .projects {
                 width: 80%;
@@ -376,30 +477,44 @@ body, html {
     .contact {
         text-align: left;
         color: white;
-        height: 70%;
+        min-height: 70%;
     
         .contact-container {
             width: 60%;
             padding-left: 20%;
-            padding-top: 40px;
             font-family: $font-poiret-one;
             font-size: 35px;
             
     
+           
             p {
-                margin: 50px 50px;
+                margin-bottom: 10px;
+    
+               
+            }
+
+            .details {
+                color: black;
+                font-size: 40px;
+                padding: 10px 15px;
                 
             }
-    
-            .contact-details {
-                color: black;
-                font-size: 45px;
-            }
-    
-            a { 
+            
+            .link { 
                 color: white;
-                text-decoration: none;
+                // text-decoration: none;
+                margin: 50px 10px;
+                display: inline-block;
+                width: auto;
+                padding: 10px 20px;
+                background-color: rgb(131, 101, 116);
+                border-radius: 50px;
+                
             }
+
+            
+
+        
         }
     
     }
@@ -410,11 +525,24 @@ body, html {
 
 @media only screen and (max-width: 950px) {
 
-    // title image
-    .hero  {
-        background-image: url(./images/cb_lightOff_m.jpg);
-        height: 175px;
-        
+    .header {
+        text-align: center;
+        .profile-pic {
+            width: 150px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 20px auto 0px auto;
+           
+        }
+        .hero  {
+            background-image: url(./images/cb_lightOff_m.jpg);
+            height: 200px;
+            margin-top: 120px;
+            
+           
+        }
     }
 
     // menu
@@ -430,29 +558,16 @@ body, html {
     .about {
 
         .about-container {
-            margin-top: 70px;
-
-            .profile-pic {
-                border-radius: 50%;
-                width: 120px;
-                height: auto;
-                
-                border: 4px solid white;
-                position: relative;
-                top: -90px;
-                
-                
-            }
+            margin-top: 0px;
+            padding: 0;
         
             .about-info {
-                
-                position: relative;
-                top: -110px;
-                
-        
+                width: 80%;
+                padding-left: 10%;
+               
                 p {
-                    color: white;
-                    font-size: 30px;
+                    color: black;
+                    font-size: 25px;
                     font-family: $font-poiret-one;
                     text-align: center;
                     
@@ -465,8 +580,8 @@ body, html {
             
                     .blurb {
                         font-size: 25px;
-                        width: 80%;
-                        padding-left: 10%;
+                        
+                        text-align: justify;
                     }
                 
                 }
@@ -480,42 +595,51 @@ body, html {
 .projects-info {
     height: auto;
 
-    .projects {
-        width: 80%;
-        padding-left: 10%;
-    }
+   
 }
 
 
-// contace page
+// contact page
 
     .contact {
         text-align: left;
         color: white;
-        height: 70%;
+        min-height: 70%;
     
         .contact-container {
             width: 60%;
             padding-left: 20%;
             padding-top: 40px;
             font-family: $font-poiret-one;
-            font-size: 30px;
+            font-size: 35px;
             
     
+        
             p {
-                margin: 50px 50px;
+                margin-bottom: 10px;
+    
+               
+            }
+
+            .details {
+                color: black;
+                font-size: 40px;
+                padding: 10px 15px;
                 
             }
-    
-            .contact-details {
-                color: black;
-                font-size: 35px;
-            }
-    
-            a { 
+            
+            .link { 
                 color: white;
-                text-decoration: none;
+                // text-decoration: none;
+                margin: 40px 10px;
+                display: inline-block;
+                width: auto;
+                padding: 10px 20px;
+                border-radius: 50px;
+                
             }
+
+    
         }
     
     }
@@ -526,129 +650,35 @@ body, html {
 
 @media only screen and (max-width: 750px) {
 
-    // title image
-    .hero  {
-        background-image: url(./images/cb_lightOff_s.jpg);
-       height: 150px;
-    }
+     // title image
 
-    // menu
-
-    .menu {
-        .menu-item {
-            font-size: 25px;
-        }
-    }
-
-    // homepage
-
-    .about {
-
-        .about-container {
-            margin-top: 70px;
-            height:70%;
-
-            .profile-pic {
-                border-radius: 50%;
-                width: 120px;
-                height: auto;
-                
-                border: 4px solid white;
-                position: relative;
-                top: -90px;
-                
-                
-            }
-        
-            .about-info {
-                
-                position: relative;
-                top: -110px;
-                
-        
-                p {
-                    color: white;
-                    font-size: 20px;
-                    font-family: $font-poiret-one;
-                    text-align: center;
-                    
-        
-                    }
-            
-                    .main-webdev {
-                        font-size: 35px;
-                    }
-            
-                    .blurb {
-                        font-size: 20px;
-                        width: 80%;
-                        padding-left: 10%;
-                    }
-                
-                }
-        
-            }   
-
-        }
-
-    // projects 
-
-.projects-info {
-    height: auto;
-}
-    
-
-
-// contact page
-
-    .contact {
-        text-align: left;
-        color: white;
-        height: 80%;
-    
-        .contact-container {
-            width: 80%;
-            padding-left: 10%;
-            padding-top: 10px;
-            font-family: $font-poiret-one;
-            font-size: 30px;
-            
-    
-            p {
-                margin: 50px 50px;
-                
-            }
-    
-            .contact-details {
-                color: black;
-                font-size: 35px;
-            }
-    
-            a { 
-                color: white;
-                text-decoration: none;
-            }
-        }
-    
-    }
-
-}
-
-// xs screen
-
-@media only screen and (max-width: 550px) {
-
-    // title image
-    .hero  {
-        background-image: url(./images/cb_lightOff_xs.jpg);
-        height: 100px;
+     .header {
         text-align: center;
+        .profile-pic {
+            width: 120px;
+            margin: 10px auto 0px auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        .hero  {
+            background-image: url(./images/cb_lightOff_s.jpg);
+            height: 170px;
+           margin-top: 90px;
+            
+           
+        }
     }
+
+    
 
     // menu
 
     .menu{
         width: 100%;
+      
+        
 
         .menu-item {
             font-size: 20px;
@@ -656,42 +686,37 @@ body, html {
         } 
     }
 
+    hr {
+       width: 80%;
+    }
+
     // homepage
 
     .about {
+        min-height: 100%;
+        
 
         .about-container {
-            margin-top: 80px;
-
-
-
-            .profile-pic {
-                border-radius: 50%;
-                width: 120px;
-                height: auto;
+            margin-top: 0px;
+ 
                 
-                border: 4px solid white;
-                position: relative;
-                top: -90px;
-                
-                
-            }
+            
             .about-info {
                 
-                position: relative;
-                top: -110px;
+            
             
                 p {
-                    color: white;
+                    color: rgb(0, 0, 0);
                     font-size: 20px;
                     font-family: $font-poiret-one;
                     text-align: center;
-                
+                    width: 90%;
+                    padding-left: 5%;
                     
                     }
             
                 .main-webdev {
-                    font-size: 35px;
+                    font-size: 25px;
                 }
         
                 .blurb {
@@ -702,12 +727,20 @@ body, html {
             }
             
         }
-}
+    }
+
+
+    .section-title {
+        padding: 10px 0px;
+        margin: 0;
+    }
     
     // projects 
 
     .projects-info {
         height: auto;
+
+        
     }
 
     // contact page
@@ -715,39 +748,195 @@ body, html {
     .contact {
     text-align: left;
     color: white;
-    height: 70%;
+    min-height: 100%;
 
         .contact-container {
-            width: 90%;
-            padding-left: 5%;
-            padding-top: 0px;
+            width: 60%;
+            padding-left: 20%;
+            padding-top: 20px;
             font-family: $font-poiret-one;
-            font-size: 20px;
+            font-size: 25px;
             word-break: break-word;
+            
 
+           
             p {
-                margin: 30px 15px;
+                margin: 30px 0px;
+                
+               
+            }
+
+            .details {
+                color: black;
+                font-size: 30px;
                 
             }
-
-            .contact-details {
-                color: black;
-                font-size: 25px;
-            }
-
-            a { 
+            
+            .link { 
                 color: white;
-                text-decoration: none;
+                // text-decoration: none;
+                margin: 20px 10px;
+                display: inline-block;
+                font-size: 25px;
+                text-align: center;
+                width: auto;
+                padding: 10px 20px;
+                background-color: rgb(131, 101, 116);
+                border-radius: 50px;
+                
+                
             }
-
-            a:hover {
-                text-decoration: underline;
-            }
+            
+            
+    
         }
+    }
 
 }
 
+
+
+
+// xs screen
+
+@media only screen and (max-width: 550px) {
+
+    // title image
+
+    .header {
+        text-align: center;
+        .profile-pic {
+            width: 100px;
+            margin: 10px auto 0px auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        .hero  {
+            background-image: url(./images/cb_lightOff_xs.jpg);
+            height: 100px;
+           margin-top: 110px;
+            
+           
+        }
+    }
+
+    
+
+    // menu
+
+    .menu{
+        width: 100%;
+      
+        
+
+        .menu-item {
+            font-size: 20px;
+            padding: 0% 5%;
+        } 
+    }
+
+    hr {
+       width: 90%;
+    }
+
+    // homepage
+
+    .about {
+        height: 100%;
+        
+
+        .about-container {
+            margin-top: 0px;
+ 
+                
+            
+            .about-info {
+                
+            
+            
+                p {
+                    color: rgb(0, 0, 0);
+                    font-size: 20px;
+                    font-family: $font-poiret-one;
+                    text-align: center;
+                    width: 90%;
+                    padding-left: 5%;
+                    
+                    }
+            
+                .main-webdev {
+                    font-size: 25px;
+                }
+        
+                .blurb {
+                    font-size: 20px;
+                    width: 90%;
+                    padding-left: 5%;
+                }
+            }
+            
+        }
+    }
+
+
+    .section-title {
+        padding: 10px 0px;
+        margin: 0;
+    }
+        
+    // projects 
+
+    .projects-info {
+        height: auto;
+
+        .projects {
+          
+        }
+    }
+
+    // contact page
+
+    .contact {
+    min-height: 80%;
+
+        .contact-container {
+            
+            margin-left: 0px;
+            font-size: 20px;
+            height: auto;
+
+            p {
+                margin-bottom: 5px;
+    
+               
+            }
+
+            .details {
+                color: black;
+                font-size: 30px;
+                
+            }
+            
+            a { 
+                color: black;
+                font-size: 30px;
+                // text-decoration: none;
+                padding: 0;
+                margin-top: 20px;
+                display: block;
+                
+            }
+    
+
+        }
+    
+    }
+
 }
+
+
 
 
 
