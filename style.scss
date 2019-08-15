@@ -20,55 +20,53 @@ body, html {
 .header{
     float: none;
 
-    .profile-pic {
-        border-radius: 50%;
-        width: 160px;
-        height: auto;        
-        border: 3px solid rgb(70, 124, 138);        
-        display: block;
-        text-align: center;
-        margin: 20px auto 0px auto;
-        position: absolute;
-        left: 0;
-        right: 0;
-        text-align: center;
-       
-        
-    }
+   
     .hero {
-        background-image: url(./images/cb_lightOff_xl.jpg);
+       
         width: auto;
         height: 350px;
-        margin-top: 60px;
-       
+        margin-top: 40px;
+     
         
     }
 
+
+
 }
 
 
 
+.menu {
 
-.menu-list {
-    display: inline-block;
-    color: white;
-    list-style-type: none;
-    width: 100%;
-    padding: 0;
-  
+    
 
-    .menu-item {
+    .menu-list {
         display: inline-block;
-        padding: 0% 5%;
-        font-size: 30px;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        font-family: $font-poiret-one;
-        cursor: pointer;
+        color: white;
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+        
+    
+        
+    
+        .menu-item {
+            display: inline-block;
+            padding: 0% 5%;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-family: $font-poiret-one;
+            cursor: pointer;
+            
+        
+        }
+    
+    
     }
-
-
 }
+
+
 
 hr {
     border: none;
@@ -84,8 +82,9 @@ hr {
     color: rgb(0, 0, 0);
     font-family: $font-poiret-one;
     font-size: 50px;
-    text-align: center;
-   
+    text-align: left;
+    width: 60%;
+    margin: 0 20% 0 auto;
 }
 
 
@@ -100,82 +99,85 @@ hr {
 
 
 .about {
-   
+    width: 100%;
+    min-height: 60%;
+    background-color: rgb(85, 148, 163);
+    
     
     .about-container{
-    
-        width: 100%;
-        min-height: 60%;
-        margin-top: 30px;
-        background-color: rgb(85, 148, 163);
-        padding-top: 20px ;
-       
+        display: grid;
+        grid-template-columns: auto auto ;
+        width: 60%;
+        margin-left:20%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 160px;
+            height: auto;        
+            border: 3px solid rgb(70, 124, 138);        
+            margin: 40px 20px;
+           
+            
+        }
         
     
-        // border-radius: 15px;
         .about-info {
-            // position: relative;
-            // top: -150px;
-    
-                p {
-                color: black;
-                font-size: 30px;
-                font-family: $font-poiret-one;
-                text-align: center;
-                
+            margin-left: 5%;
+            text-align: left;
             
-                }
-    
-                .main-webdev {
-                    font-size: 40px;
-                    color: rgb(255, 255, 255);
-                    
-                }
+
+            p {
+            color: black;
+            font-size: 30px;
+            font-family: $font-poiret-one;
             
-                hr {
-                    border: none;
-                    background-color: white;
-                    color: black;
-                    height: 2px;
-                    width: 80%;
-                }
             
-                .blurb {
-                    text-align: center;
-                    width: 60%;
-                    padding-left: 20%;
-                    color: rgb(255, 255, 255);
-                    font-size: 25px;
-                }
+        
             }
+
+            .main-webdev {
+                font-size: 40px;
+                color: rgb(255, 255, 255);
+                
+            }
+        
+        
+            .blurb {
+                text-align: justify;
+                color: rgb(255, 255, 255);
+                font-size: 25px;
+                
+            }
+        }
     
     }
     
         
-    }
+ }
     
-    
+
 
 // projects page
 
 .projects-info {
-    // background-color: rgb(255, 150, 111);  
-    background-color: rgb(156, 190, 134);  
+    
+    background-color: rgb(70, 124, 138);  
     padding: 30px 0px 30px 0px;  
     min-height: 100%;
-    border-top-style: solid;
-    border-color: rgb(121, 149, 102);
-    border-width: 3px;
     
-   
+    hr {
+         background-color: rgb(85, 148, 163);   
+    }
 
     .projects {
         width: 60%;
         padding-left: 20%;
         padding-top: 20px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        align-content: space-between;
         justify-content: center;
 
         a{
@@ -183,15 +185,14 @@ hr {
 
 
             .card {
-                background-color: white;
+                background-color: rgb(42, 42, 42);
                 height: 350px;
                 width: 300px;
                 margin: 20px 20px;
                 display: block;
-                border-radius: 5px;
-                padding: 5px 5px;
+                padding: 1px 1px;
                 transition: all 0.3s ease-in-out;
-
+                
 
                 .card-img {
                     height: auto;
@@ -204,7 +205,7 @@ hr {
                     text-align: center;
                     padding: 10px 10px;
                     margin: 0;
-                    color: black;
+                    color: rgb(253, 253, 253);
                     text-decoration: none;
                 }
 
@@ -213,7 +214,7 @@ hr {
                     text-align: justify;
                     padding: 10px 20px;
                     margin: 0;
-                    color: dimgray;
+                    color: rgb(146, 146, 146);
                     font-size: 20px;
                     text-decoration: none;
 
@@ -223,7 +224,7 @@ hr {
         
             .card:hover {
                 transform: scale(1.02);
-                box-shadow: -2px 2px 5px rgb(121, 149, 102);
+                box-shadow: -2px 2px 5px rgb(58, 57, 57);
             }
             
         }
@@ -239,50 +240,64 @@ hr {
 
 .contact {
     text-align: left;
-    color: white;
-    // background-color: rgb(66, 116, 129);   
-    background-color: rgb(167, 129, 148);  
+    color: black; 
+    background-color: rgb(85, 148, 163);  
     padding: 30px 0px 50px 0px;   
     min-height: 70%;
-    border-top-style: solid;
-    border-color: rgb(131, 101, 116);
-    border-width: 3px;
+    margin-top: 60px;
+
+    hr {
+        background-color: rgb(70, 124, 138);
+    }
 
     .contact-container {
         width: 60%;
-        padding-left: 20%; 
+        margin-left: 20%; 
         font-family: $font-poiret-one;
         font-size: 35px;
-        text-align: center;
+        text-align: left;
         height: auto;
-        
+        margin-bottom: 60px;
+        padding-left: 300px;
+        margin-top: 100px;
+          
         p {
             margin-bottom: 20px;
 
             
         }
 
-        .details {
-            color: black;
-            font-size: 40px;
+        .email {
+            color: white;
+            // margin-left: 60px;
         }
+
+        
         
         .link { 
             color: white;
             text-decoration: none;
-            margin: 50px 10px;
-            width: auto;
-            padding: 10px 20px;
-            background-color: rgb(131, 101, 116);
-            border-radius: 50px;
             display: inline-block;
+            border-style: solid;
+            border-color: rgb(70, 124, 138);
+            padding: 10px 20px;
+            border-radius: 20px 6px 6px 20px;
+            margin-top: 40px;
+
             
+            
+        }
+
+        .right {
+            border-radius: 6px 20px 20px 6px;
         }
 
         .link:hover {
        
-        color: black;
+        color: white;
         cursor: pointer;
+        background-color: rgb(70, 124, 138);
+
         }
 
         
@@ -294,13 +309,10 @@ hr {
 
 footer {
     font-size: 25px;
-    background-color: cadetblue;
     padding: 10px 0px;
     color: white;
     font-family: $font-poiret-one;
-    border-top-style: solid;
-    border-width: 3px;
-    border-color: rgb(83, 136, 138);
+    background-color: rgb(42, 42, 42);
 }
 
 
@@ -310,25 +322,26 @@ footer {
 
 @media  only screen and (max-width: 1400px) {
 
-    // title image
-    .header {
-        .profile-pic {
-            position: absolute;
-            left: 0;
-            right: 0;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .hero  {
-            background-image: url(./images/cb_lightOff_xl.jpg);
-            margin-top: 100px;
-        }
+    .hero {
+        height: 300px;
     }
 
     hr {
         width: 80%;
     }
+
+    
+.about {
+
+    .about-container{
+       
+        width: 80%;
+        margin-left:10%;
+
+    }
+    
+        
+ }
     
 
     // projects
@@ -347,39 +360,26 @@ footer {
         text-align: left;
         color: white;
         min-height: 60%;
+
+        
     
         .contact-container {
             width: 60%;
-            padding-left: 20%;
+            margin-left: 20%;
+            padding-left: 150px;
             
             font-family: $font-poiret-one;
             font-size: 35px;
             
-    
            
             p {
                 margin-bottom: 5px;
-    
-               
             }
 
-            .details {
+            .email {
                 color: black;
-                font-size: 40px;
-                
             }
-            
-            a { 
-                color: white;
-                // text-decoration: none;
-                margin: 10px 0px;
-                display: inline-block;
-                width: auto;
-                padding: 10px 10px;
-                background-color: rgb(131, 101, 116);
-                border-radius: 50px;
-                
-            }
+
     
         
         }
@@ -395,84 +395,83 @@ footer {
     // title image
 
     .header {
-        .profile-pic{
-            position: absolute;
-            left: 0;
-            right: 0;
-            text-align: center;
-            margin-top: 30px;
-        }
 
         .hero  {
             background-image: url(./images/cb_lightOff_l.jpg);
             height: 225px;
-            margin-top: 120px;
+            margin-top: 20px;
         }
+    }
+
+    hr {
+        width: 60%;
+        margin-left: 20%;
     }
     
 
     // homepage
+    .home {
+        min-height: 60%;
 
-    .about {
+        .about {
 
-        .about-container {
-            margin-top: 70px;
+            .about-container {
+                margin-top: 30px;
+                color: white;
 
-            .profile-pic {
-                border-radius: 50%;
-                width: 120px;
-                height: auto;
-                
-                border: 4px solid white;
-                position: relative;
-                top: -90px;
-                
-                
-            }
-        
-            .about-info {
-                
-                // position: relative;
-                // top: -110px;
-                
-        
-                p {
-                    color: white;
-                    font-size: 30px;
-                    font-family: $font-poiret-one;
-                    text-align: center;
+                .profile-pic {
+                    width: 120px;
+                    height: auto;
+                    border: 4px solid rgb(70, 124, 138);
                     
-        
-                    }
+                }
             
+                .about-info {
+                    p {
+                        color: black;
+                        font-size: 25px;
+                    }
+                
                     .main-webdev {
-                        font-size: 45px;
+                        font-size: 35px;
+                        color: white;
                     }
             
                     .blurb {
                         font-size: 25px;
-                        width: 80%;
-                        padding-left: 10%;
+                        text-align: justify;
+                        color: white;
                     }
-                
-                }
-        
-            }   
+                    
+                    
+            
+                }   
 
-        }
-
-        // projects
-    
-        .projects-info {
-            width: 100%;
-            height: auto;
-            .projects {
-                width: 80%;
-                padding-left: 10%;
             }
         }
+       
+    }  
 
-// contact page
+
+    // projects
+    
+     .projects-info {
+        width: 100%;
+        height: auto;
+
+        hr {
+            width: 60%;
+            margin-left: 20%;
+        }
+        .projects {
+            width: 80%;
+            padding-left: 10%;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+
+    // contact page
 
     .contact {
         text-align: left;
@@ -481,10 +480,10 @@ footer {
     
         .contact-container {
             width: 60%;
-            padding-left: 20%;
+            margin-left: 20%;
             font-family: $font-poiret-one;
             font-size: 35px;
-            
+            padding-left: 125px;
     
            
             p {
@@ -493,24 +492,13 @@ footer {
                
             }
 
-            .details {
+            .email {
                 color: black;
                 font-size: 40px;
-                padding: 10px 15px;
                 
             }
             
-            .link { 
-                color: white;
-                // text-decoration: none;
-                margin: 50px 10px;
-                display: inline-block;
-                width: auto;
-                padding: 10px 20px;
-                background-color: rgb(131, 101, 116);
-                border-radius: 50px;
-                
-            }
+           
 
             
 
@@ -519,27 +507,19 @@ footer {
     
     }
 
-
 }
+
 // m screen
 
 @media only screen and (max-width: 950px) {
 
     .header {
         text-align: center;
-        .profile-pic {
-            width: 150px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            text-align: center;
-            margin: 20px auto 0px auto;
-           
-        }
+        
         .hero  {
             background-image: url(./images/cb_lightOff_m.jpg);
             height: 200px;
-            margin-top: 120px;
+            margin-top: 30px;
             
            
         }
@@ -553,23 +533,37 @@ footer {
         }
     }
 
+    hr {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .section-title {
+        width: 80%;
+        margin-left: 10%;
+    }
+
     // homepage
 
     .about {
 
         .about-container {
-            margin-top: 0px;
-            padding: 0;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+            .profile-pic {
+                width: 120px;
+                margin: 20px auto 0px auto;
+               
+            }
         
             .about-info {
-                width: 80%;
-                padding-left: 10%;
-               
+                text-align: left;
+
                 p {
                     color: black;
                     font-size: 25px;
                     font-family: $font-poiret-one;
-                    text-align: center;
                     
         
                     }
@@ -580,7 +574,6 @@ footer {
             
                     .blurb {
                         font-size: 25px;
-                        
                         text-align: justify;
                     }
                 
@@ -595,6 +588,10 @@ footer {
 .projects-info {
     height: auto;
 
+    hr {
+        width: 80%;
+        margin-left: 10%;
+    }
    
 }
 
@@ -608,11 +605,11 @@ footer {
     
         .contact-container {
             width: 60%;
-            padding-left: 20%;
+            margin-left: 20%;
             padding-top: 40px;
             font-family: $font-poiret-one;
             font-size: 35px;
-            
+            padding-left: 65px;
     
         
             p {
@@ -621,23 +618,12 @@ footer {
                
             }
 
-            .details {
+            .email {
                 color: black;
                 font-size: 40px;
-                padding: 10px 15px;
                 
             }
-            
-            .link { 
-                color: white;
-                // text-decoration: none;
-                margin: 40px 10px;
-                display: inline-block;
-                width: auto;
-                padding: 10px 20px;
-                border-radius: 50px;
-                
-            }
+           
 
     
         }
@@ -654,18 +640,149 @@ footer {
 
      .header {
         text-align: center;
-        .profile-pic {
-            width: 120px;
-            margin: 10px auto 0px auto;
-            position: absolute;
-            left: 0;
-            right: 0;
-            text-align: center;
-        }
+        
         .hero  {
             background-image: url(./images/cb_lightOff_s.jpg);
             height: 170px;
-           margin-top: 90px;
+            margin-top: 30px;
+            
+           
+        }
+    }
+
+    
+
+    // menu
+
+    .menu{
+        width: 100%;
+      
+        
+
+        .menu-item {
+            font-size: 25px;
+            padding: 0% 5%;
+        } 
+    }
+
+    hr {
+       width: 80%;
+    }
+
+    .section-title {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    // homepage
+
+    .about {
+        min-height: 100%;
+        
+
+        .about-container {
+            margin-top: 10px;
+ 
+            .profile-pic {
+                width: 120px;
+                margin: 20px auto 0px auto;
+                
+            }    
+            
+            .about-info {
+                text-align: left;
+            
+                p {
+                    color: rgb(0, 0, 0);
+                    font-size: 20px;
+                    width: 90%;
+                    padding-left: 5%;
+                    
+                    }
+            
+                .main-webdev {
+                    font-size: 25px;
+                }
+        
+                .blurb {
+                    font-size: 20px;
+                    width: 90%;
+                    padding-left: 5%;
+                }
+            }
+            
+        }
+    }
+
+
+    
+    
+    // projects 
+
+    .projects-info {
+        height: auto;
+
+        .projects {
+            display: grid;
+            grid-template-columns: auto ;
+        }
+        
+    }
+
+    // contact page
+
+    .contact {
+    text-align: left;
+    color: white;
+    min-height: 100%;
+
+        .contact-container {
+            width: 60%;
+            margin-left: 20%;
+            padding-top: 20px;
+            font-family: $font-poiret-one;
+            font-size: 25px;
+            word-break: break-word;
+            padding-left: 40px;
+
+           
+            p {
+                margin: 30px 0px;
+                
+               
+            }
+
+            .email {
+                color: black;
+                font-size: 30px;
+                
+            }
+            
+            
+            
+            
+    
+        }
+    }
+
+}
+
+
+
+
+// xs screen
+
+@media only screen and (max-width: 550px) {
+
+    // title image
+
+    .header {
+        text-align: center;
+      
+        .hero  {
+            background-image: url(./images/cb_lightOff_xs.jpg);
+            height: 135px;
+            margin-top: 10px;
             
            
         }
@@ -688,22 +805,33 @@ footer {
 
     hr {
        width: 80%;
+       margin-left: 10%;
+    }
+
+    
+    .section-title {
+        width: 80%;
+        margin-left: 10%;
     }
 
     // homepage
 
     .about {
-        min-height: 100%;
-        
-
+        height: 100%;
         .about-container {
             margin-top: 0px;
- 
-                
+            display: grid;
+            grid-template-columns: auto ;
+            width: 90%;
+            margin: 5%;
+            .profile-pic {
+                width: 100px;
+                margin: 10px auto 0px auto;
+              
+            }   
             
             .about-info {
-                
-            
+                margin: 0;
             
                 p {
                     color: rgb(0, 0, 0);
@@ -716,7 +844,7 @@ footer {
                     }
             
                 .main-webdev {
-                    font-size: 25px;
+                    font-size: 30px;
                 }
         
                 .blurb {
@@ -730,93 +858,79 @@ footer {
     }
 
 
-    .section-title {
-        padding: 10px 0px;
-        margin: 0;
-    }
-    
+        
     // projects 
 
     .projects-info {
         height: auto;
 
-        
+        .projects {
+            display: grid;
+            grid-template-columns: auto;
+        }
     }
 
     // contact page
 
     .contact {
-    text-align: left;
-    color: white;
-    min-height: 100%;
+    min-height: 80%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 30px 0px;  
 
         .contact-container {
-            width: 60%;
-            padding-left: 20%;
-            padding-top: 20px;
-            font-family: $font-poiret-one;
-            font-size: 25px;
-            word-break: break-word;
             
+            font-size: 25px;
+            height: auto;
+            padding-left: 20px;
+            padding-top: 0;
+            margin-top: 100px;
+            margin-bottom: 30px;
 
-           
             p {
-                margin: 30px 0px;
-                
+                margin-bottom: 5px;
+    
                
             }
 
-            .details {
+            .email {
                 color: black;
-                font-size: 30px;
+                font-size: 25px;
+                margin: 0;
                 
             }
             
             .link { 
                 color: white;
-                // text-decoration: none;
-                margin: 20px 10px;
-                display: inline-block;
                 font-size: 25px;
+                margin-top: 20px;
+                display: inline-block;
                 text-align: center;
-                width: auto;
-                padding: 10px 20px;
-                background-color: rgb(131, 101, 116);
-                border-radius: 50px;
-                
-                
+                margin-left: 10px;
             }
-            
-            
     
+
         }
+    
     }
 
 }
 
 
 
+// xxs screen
 
-// xs screen
-
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 400px) {
 
     // title image
 
     .header {
         text-align: center;
-        .profile-pic {
-            width: 100px;
-            margin: 10px auto 0px auto;
-            position: absolute;
-            left: 0;
-            right: 0;
-            text-align: center;
-        }
+      
         .hero  {
             background-image: url(./images/cb_lightOff_xs.jpg);
             height: 100px;
-           margin-top: 110px;
+            margin-top: 10px;
             
            
         }
@@ -829,83 +943,43 @@ footer {
     .menu{
         width: 100%;
       
-        
+        .menu-list {
 
-        .menu-item {
-            font-size: 20px;
-            padding: 0% 5%;
-        } 
-    }
-
-    hr {
-       width: 90%;
-    }
-
-    // homepage
-
-    .about {
-        height: 100%;
-        
-
-        .about-container {
-            margin-top: 0px;
- 
-                
-            
-            .about-info {
-                
-            
-            
-                p {
-                    color: rgb(0, 0, 0);
-                    font-size: 20px;
-                    font-family: $font-poiret-one;
-                    text-align: center;
-                    width: 90%;
-                    padding-left: 5%;
-                    
-                    }
-            
-                .main-webdev {
-                    font-size: 25px;
-                }
-        
-                .blurb {
-                    font-size: 20px;
-                    width: 90%;
-                    padding-left: 5%;
-                }
-            }
-            
+            .menu-item {
+                font-size: 20px;
+                padding: 0% 5%;
+            } 
         }
+
+        
     }
 
-
+   
+    
     .section-title {
-        padding: 10px 0px;
-        margin: 0;
+        width: 80%;
+        margin-left: 10%;
+        font-size: 40px;
     }
-        
-    // projects 
 
-    .projects-info {
-        height: auto;
-
-        .projects {
-          
-        }
-    }
+  
 
     // contact page
 
     .contact {
     min-height: 80%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 30px 0px;  
 
         .contact-container {
             
-            margin-left: 0px;
-            font-size: 20px;
+            font-size: 25px;
             height: auto;
+            padding-left: 0px;
+            padding-top: 0;
+            margin-top: 70px;
+            margin-bottom: 30px;
 
             p {
                 margin-bottom: 5px;
@@ -913,20 +987,22 @@ footer {
                
             }
 
-            .details {
+            .email {
                 color: black;
-                font-size: 30px;
+                font-size: 23px;
+                margin: 0;
+                padding: 0;
                 
             }
             
-            a { 
-                color: black;
-                font-size: 30px;
-                // text-decoration: none;
-                padding: 0;
+            .link { 
+                color: white;
+                font-size: 20px;
                 margin-top: 20px;
-                display: block;
-                
+                display: inline-block;
+                text-align: center;
+                margin-left: 5px;
+                padding: 7px 13px;
             }
     
 
@@ -935,6 +1011,7 @@ footer {
     }
 
 }
+
 
 
 

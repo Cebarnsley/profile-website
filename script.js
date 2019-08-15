@@ -1,3 +1,5 @@
+// scroll function
+
 $(document).ready(function () {
     $('a.home').click(function() {
     $('html, body').animate({
@@ -15,3 +17,6 @@ $(document).ready(function () {
       }, 1000)
     })
   });
+
+
+ 
