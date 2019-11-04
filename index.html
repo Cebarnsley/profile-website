@@ -7,71 +7,88 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src='script.js'></script>
+    <link rel="icon" href="http://example.com/favicon.png">
     
 </head>
 <body>
 
-    <!-- hero title image -->
+    <div class="header">
+        <div class="title-image">
+            <img src="images/title-image.png">
+            <div class="title-text">
+               
+                <h2>Candice Barnsley</h2>
+            
+             </div>
+        </div>
+       
+        <div class="header-text">
+            <p  class="main-webdev">
+                Front End Website Developer 
+            </p>
+            <p class="header-skills" >
+                HTML - CSS3 - React - Bootstrap - SASS - WordPress - Node.js - Github   
+            </p> 
+            
+
+        </div> 
+    </div>
+
+     <!-- menu -->
+
+    <nav class="menu">
+        <ul class="menu-list">
+            <a class=" about-section menu-item"><li>About</li></a>
+            <a class=" project-section menu-item"><li>Projects</li></a>
+            <a class=" contact-section menu-item"><li>Contact </li></a>
+        </ul>
+    </nav>
+  
 <div class="home">
 
-<div class="header">
+   
 
-    
-    <img src="./images/cb_lightOff_xl.jpg" class="hero" alt="title image" id="hero">
-  
+    <div class="about">
 
-</div>
+        <div class="about-container">
 
-
-    <!-- menu -->
- 
-
-<div class="menu">
-    <ul class="menu-list">
-        <a class=" home menu-item"><li>About</li></a>
-        <a class=" project-section menu-item"><li>Projects</li></a>
-        <a class=" contact-section menu-item"><li>Contact </li></a>
-    </ul>
-</div>
-<hr>
-
-    <!-- about section -->
-
-<div class="about">
-        
-            <div class="about-container">
+            <div class="photo-card">
                 <img src="./images/profile-pic.jpg" class="profile-pic" alt="profile picture" >
-                <div class="about-info">
-                    <p  class="main-webdev">
-                        Front End Website Developer 
-                    </p>
-                    <p >
-                        HTML - CSS3 - React - Bootstrap - SASS - WordPress - Node.js - Github   
-                    </p>
-                    
-                    <p class="blurb">
-                        Hello! I live in Greater Manchester, UK. 
-                        I am a Nurse but since discovering a passion for development I have been using my spare time to improve my programming skills. 
-                        I am looking to embark on a new career path and make the transition to Front End Website Developer.  
-                    </p>
-                </div>
+                <p class="photo-name">Candice Barnsley</p>
+                <img src="arrow.png">
+            </div>
+            <div class="about-info">
+
+                
+                <p class="blurb">
+                        Hello! I live in Greater Manchester, UK. <br>
+                        I am currently working as a Nurse, but since discovering a passion for website development I have been using my spare time to improve my programming skills. <br>
+                        I am now looking to embark on a new career path and make the transition to Front End Website Developer.  
+                </p>
+            </div>
         </div>
-</div>
+    </div>
 </div>
 
-<!-- <div class="about-projects-transition">
 
-</div> -->
- <!-- projects -->
+
 
  <div class="projects-info">
-     <p class="section-title">Projects</p>
+    
+ <!-- projects -->
+ <div class="section-title-projects">
 
-     <hr>
+        <p class="section-title">Projects</p>
+    </div>
     <div class="projects">
     
         
@@ -80,7 +97,7 @@
         <a href="https://cebarnsley.github.io/background-generator/">
             <div class="card">
                    <img src="bg-gen.png" class="card-img">
-                    <h2>Background Generator</h1>
+                    <h3>Background Generator</h3>
                     <p>Uses JavaScript to randomly generate a two coloured linear gradient background.</p>
             </div>
         </a>
@@ -89,7 +106,7 @@
         <a href="https://cebarnsley.github.io/robo-friends/">
             <div class="card">
                    <img src="robofriends.png" class="card-img">
-                    <h2>Robo Friends</h1>
+                    <h3>Robo Friends</h3>
                     <p>React App using an API to provide images for Robot Friends.</p>
             </div>
         </a>
@@ -99,7 +116,7 @@
         <a href="https://face-finder-7961.herokuapp.com/">
             <div class="card">
                    <img src="face-recog.png" class="card-img">
-                    <h2>Face Recogntion</h1>
+                    <h3>Face Recogntion</h3>
                     <p>App created with React uses an API to highlight faces in photos.</p>
             </div>
         </a>
@@ -109,7 +126,7 @@
         <a href="https://cebarnsley.github.io/Puppers-Puppers-Puppers/homepage/">
             <div class="card">
                    <img src="puppers.png" class="card-img">
-                    <h2>Puppers Puppers Puppers</h1>
+                    <h3>Puppers Puppers Puppers</h3>
                     <p>A responsive multipage website for a fictitious client, featuring JS day/night toggle</p>
             </div>
         </a>
@@ -119,7 +136,7 @@
         <a href="https://katscakes.org">
             <div class="card">
                    <img src="cakes.png" class="card-img">
-                    <h2>Kat's Cakes</h1>
+                    <h3>Kat's Cakes</h3>
                     <p>A WordPress Website for a friend.</p>
             </div>
         </a>
@@ -132,40 +149,23 @@
 </div>  
 <!-- end projects-info -->
 
-<!-- project contact transition -->
-<!-- 
-<div class="project-contact-transition">
+ 
 
-</div> -->
+ 
+<footer class="contact-section"> 
+    <div class="contact-links">
+        <ul>
+           
+            <li><a href="mailto:cebarnsley@gmail.com" class="link">Email</a></li> .
+            <li><a href="https://github.com/Cebarnsley" class="link left contact-details">Github</a></li> .
+            <li><a href="https://www.linkedin.com/in/candice-barnsley-9a574b18a/" class=" link right contact-details">LinkedIn</a></li> 
+        </ul>
 
-   <!-- contact -->
-
-   <div class="contact">
-       <p class="section-title ">Contact</p>
-       <hr>
-    <div class="contact-container">
-        <p class="contact-details">Email me at: </p>
-        <p class="details email contact-details">cebarnsley@gmail.com</p> 
-          
-        <p class="contact-details"> or get in touch via:</p>
-        
-        <a href="https://github.com/Cebarnsley" class="link left contact-details">Github</a> 
-    
-        
-       
-      <a href="https://www.linkedin.com/in/candice-barnsley-9a574b18a/" class=" link right contact-details">LinkedIn</a>
-        
     </div>
-</div>
- 
-
- 
-<footer> 
-    &copy;
-    <script type="text/javascript">
-        document.write(new Date().getFullYear());
-        </script> 
-        cbarnsley.com
+    <div >
+            <p class="site">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> cbarnsley.com</p>
+    </div>
+    
 </footer>
 
   
