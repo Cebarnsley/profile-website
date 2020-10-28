@@ -108,7 +108,7 @@ body .menu .menu-list .menu-item:hover, html .menu .menu-list .menu-item:hover {
 }
 body .home, html .home {
   height: auto;
-  background-color: #708d88;
+  background-color: #64807b;
 }
 body .home .about, html .home .about {
   width: 100%;
@@ -126,6 +126,7 @@ body .home .about .about-container, html .home .about .about-container {
 body .home .about .about-container .photo-card, html .home .about .about-container .photo-card {
   background-color: #f5e9cf;
   height: 275px;
+  width: 184px;
   border-radius: 7px;
   box-shadow: -2px 3px 3px #353535;
   transform: rotate(-7deg);
@@ -153,16 +154,28 @@ body .home .about .about-container .photo-card img, html .home .about .about-con
 body .home .about .about-container .about-info, html .home .about .about-container .about-info {
   text-align: left;
 }
-body .home .about .about-container .about-info .blurb, html .home .about .about-container .about-info .blurb {
+body .home .about .about-container .about-info p, html .home .about .about-container .about-info p {
   text-align: justify;
   color: #f5e9cf;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Raleway", sans-serif;
-  line-height: 50px;
   font-weight: 100;
 }
+body .home .about .about-container .about-info .cv-link, html .home .about .about-container .about-info .cv-link {
+  text-align: center;
+}
+body .home .about .about-container .about-info .cv-link a, html .home .about .about-container .about-info .cv-link a {
+  font-size: 30px;
+  color: lightsalmon;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+body .home .about .about-container .about-info .cv-link a:hover, html .home .about .about-container .about-info .cv-link a:hover {
+  border: 2px solid lightsalmon;
+  border-radius: 5px;
+}
 body .projects-info, html .projects-info {
-  background-color: #ac9944;
+  background-color: #3a5f5f;
   padding: 0px 0px 20px 0px;
   min-height: 100%;
 }
@@ -199,9 +212,10 @@ body .projects-info .projects a .card, html .projects-info .projects a .card {
   padding: 6px 6px;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 5px #333;
 }
 body .projects-info .projects a .card .card-img, html .projects-info .projects a .card .card-img {
-  height: auto;
+  height: 160px;
   width: 300px;
 }
 body .projects-info .projects a .card h3, html .projects-info .projects a .card h3 {
@@ -426,6 +440,15 @@ body footer .contact-links ul li a:hover, html footer .contact-links ul li a:hov
     padding-left: 0%;
     display: grid;
     grid-template-columns: auto;
+  }
+  body footer {
+    font-size: 20px;
+  }
+  body footer .contact-links ul {
+    padding: 0px;
+  }
+  body footer .contact-links ul li a {
+    padding: 5px 5px;
   }
 }
 @media only screen and (max-width: 400px) {

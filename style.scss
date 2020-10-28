@@ -156,7 +156,7 @@ body, html {
     // home page
     .home{
         height:auto;
-        background-color: rgb(112, 141, 136);
+        background-color: rgb(100, 128, 123);
        
 
         .about {
@@ -176,6 +176,7 @@ body, html {
                 .photo-card {
                     background-color: rgb(245, 233, 207);
                     height: 275px;
+                    width: 184px;
                     border-radius: 7px;
                     box-shadow: -2px 3px 3px rgb(53, 53, 53);
                     transform: rotate(-7deg);
@@ -210,15 +211,38 @@ body, html {
                     text-align: left;
                     
                 
-                    .blurb {
-                        text-align: justify;
-                        color: rgb(245, 233, 207);
-                        font-size: 30px;
-                        // font-family: 'Pompiere', cursive;
-                        font-family: $font-raleway;
-                        line-height: 50px;
-                        font-weight: 100;
-                    }
+                    
+                            p {
+                            text-align: justify;
+                            color: rgb(245, 233, 207);
+                            font-size: 25px;
+                            font-family: $font-raleway;
+                            font-weight: 100;
+                            
+                           
+                        }
+
+                        .cv-link {
+                            text-align: center;
+                            
+
+                            a {
+                                font-size: 30px;
+                                color: lightsalmon;
+                                text-decoration: none;
+                                padding: 10px 10px;
+                            }
+                            a:hover{
+                                border: 2px solid lightsalmon;
+                                border-radius: 5px;
+                            }
+                            
+                        }
+
+                        
+
+                        
+                     
                 }
             
             }
@@ -234,7 +258,7 @@ body, html {
 
     .projects-info {
         
-        background-color: rgb(172, 153, 68);  
+        background-color: rgb(58, 95, 95);  
         padding: 0px 0px 20px 0px;  
         min-height: 100%;
          
@@ -278,9 +302,10 @@ body, html {
                     padding: 6px 6px;
                     border-radius: 5px;
                     transition: all 0.2s ease-in-out;
+                    box-shadow: 0px 0px 5px #333;
 
                     .card-img {
-                        height: auto;
+                        height: 160px;
                         width: 300px;
                     }
 
@@ -724,7 +749,22 @@ body, html {
             }
         }
     
-           
+        footer {
+
+            font-size: 20px;
+            .contact-links {
+                ul {
+
+                    padding: 0px;
+                    li {
+                        a{
+                            padding: 5px 5px;
+                        }
+                       
+                    }
+                }
+            }
+        }   
 
     }
 }
