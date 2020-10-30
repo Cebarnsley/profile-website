@@ -163,6 +163,7 @@ body .home .about .about-container .about-info p, html .home .about .about-conta
 }
 body .home .about .about-container .about-info .cv-link, html .home .about .about-container .about-info .cv-link {
   text-align: center;
+  margin-top: 35px;
 }
 body .home .about .about-container .about-info .cv-link a, html .home .about .about-container .about-info .cv-link a {
   font-size: 30px;
